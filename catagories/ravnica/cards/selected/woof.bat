@@ -1,0 +1,1 @@
+for /R %%a in (*.jpg) do ren "%%~a" "!filename:-2!%%~xa"
