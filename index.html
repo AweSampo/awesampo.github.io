@@ -7,14 +7,12 @@ body {
 }
 </style>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-	var obj = 'https://raw.githubusercontent.com/AweSampo/awesampo.github.io/master/b.json';
-	for (x in obj['data']) {
-		var z = document.createElement('a');
-		z.innerHTML = '<a href="'+['uri']+'"><img src='+['image_uris']+'"></a>';
-		document.getElementById("gallery").appendChild(z);
-		}
-	});
+var obj = 'https://raw.githubusercontent.com/AweSampo/awesampo.github.io/master/b.json';
+for (x in obj['data']) {
+	var z = document.createElement('a');
+	z.innerHTML = '<a href="'+['uri']+'"><img src='+['image_uris']+'"></a>';
+	document.getElementById("gallery").appendChild(z);
+	};
 </script>
 </head>
 <body>
